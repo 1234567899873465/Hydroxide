@@ -12,11 +12,7 @@ import("ui/controls/TabSelector")
 local MessageBox, MessageType = import("ui/controls/MessageBox")
 
 local RemoteSpy
-local ClosureSpy
-local ScriptScanner
-local ModuleScanner
-local UpvalueScanner
-local ConstantScanner
+
 
 xpcall(function()
 	RemoteSpy = import("ui/modules/RemoteSpy")

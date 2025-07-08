@@ -9,11 +9,6 @@ local Pages = Base.Body.Pages
 local MessageBox, MessageType = import("ui/controls/MessageBox")
 
 local requiredMethods = {
-    ConstantScanner = import("modules/ConstantScanner").RequiredMethods,
-    UpvalueScanner = import("modules/UpvalueScanner").RequiredMethods,
-    ScriptScanner = import("modules/ScriptScanner").RequiredMethods,
-    ModuleScanner = import("modules/ModuleScanner").RequiredMethods,
-    ClosureSpy = import("modules/ClosureSpy").RequiredMethods,
     RemoteSpy = import("modules/RemoteSpy").RequiredMethods
 }
 

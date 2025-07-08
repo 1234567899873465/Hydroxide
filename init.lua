@@ -5,7 +5,7 @@ if oh then
 end
 
 local web = true
-local user = "1234567899873465" -- change if you're using a fork
+local user = "Upbolt" -- change if you're using a fork
 local branch = "revision"
 local importCache = {}
 
@@ -191,7 +191,7 @@ if readFile and writeFile then
     local hasFolderFunctions = (isFolder and makeFolder) ~= nil
     local ran, result = pcall(readFile, "__oh_version.txt")
 
-    if not ran then
+    if not ran or releaseInfo.tag_name ~= result then
         if hasFolderFunctions then
             local function createFolder(path)
                 if not isFolder(path) then
